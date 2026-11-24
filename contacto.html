@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos y Contacto | Sweet Cakes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+    <a href="index.html" class="brand-logo">
+        <strong>SWEET CAKES</strong>
+        <span>LA EXPERIENCIA DULCE</span>
+    </a>
+    <nav class="main-nav" aria-label="Navegación principal">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Catálogo</a></li>
+            <li><a href="contacto.html" class="active">Pedidos y Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <header class="page-banner">
+        <p class="eyebrow">HAZ TU ORDEN EN LÍNEA</p>
+        <h1>REGISTRO DE PEDIDOS</h1>
+        <p>Revisa los productos que agregaste desde el catálogo y completa tus datos para finalizar tu pedido.</p>
+    </header>
+
+    <section class="order-layout">
+        <form id="orderForm" class="order-form" novalidate>
+            <fieldset>
+                <legend>Tu pedido</legend>
+                <p class="form-help">Los productos que elegiste en el catálogo aparecen aquí automáticamente.</p>
+
+                <div id="cartList" class="cart-list"></div>
+
+                <div class="cart-total">
+                    <strong>Total: $<span id="cartTotal">0.00</span> MXN</strong>
+                </div>
+
+                <a href="productos.html" class="btn-outline">Agregar más productos</a>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos del Cliente</legend>
+
+                <label for="nombre">Nombre completo *</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej. Juana Perez" required minlength="3">
+
+                <label for="telefono">Número de teléfono (10 dígitos) *</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ej. 4771234567" pattern="[0-9]{10}" title="Ingresa un número válido de 10 dígitos" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Detalles de Entrega</legend>
+
+                <label for="fecha">Fecha de entrega *</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <label for="entrega">Forma de entrega *</label>
+                <select id="entrega" name="entrega" required>
+                    <option value="">-- Selecciona modalidad --</option>
+                    <option value="presencial">Entrega Presencial (Recoger en sucursal)</option>
+                    <option value="domicilio">Entrega a Domicilio</option>
+                </select>
+
+                <label for="especificaciones">Especificaciones del pedido / Dirección de envío</label>
+                <textarea id="especificaciones" name="especificaciones" rows="4" placeholder="Escribe aquí dedicatorias para el pastel, alergias o tu dirección si elegiste entrega a domicilio..."></textarea>
+            </fieldset>
+
+            <button type="submit" class="btn-primary btn-full">Pagar ahora</button>
+        </form>
+
+        <aside class="order-info">
+            <article class="info-box">
+                <h3>Información de Entrega</h3>
+                <p><strong>Horario de atención:</strong><br>Lunes a Sábado de 9:00 AM a 8:00 PM.</p>
+                <p><strong>Tiempo de preparación:</strong><br>Los pasteles completos requieren al menos 24 horas de anticipación.</p>
+            </article>
+
+            <article class="info-box wine-box">
+                <h3>¿Tienes dudas?</h3>
+                <p>Escríbenos directamente o llámanos para cotizar mesas de postres y eventos personalizados.</p>
+                <p><strong>Tel:</strong> (477) 555-0192</p>
+            </article>
+        </aside>
+    </section>
+
+    <!-- Ventana modal flotante que aparece solamente después de presionar "Pagar ahora" -->
+    <div id="ticketModal" class="ticket-modal" hidden>
+        <div class="ticket-modal-overlay"></div>
+        <section class="ticket-box ticket-modal-content" role="dialog" aria-modal="true" aria-labelledby="ticketTitle">
+            <div class="ticket-content">
+                <button type="button" class="ticket-close" id="closeTicket" aria-label="Cerrar">&times;</button>
+                <h2 id="ticketTitle">SWEET CAKES</h2>
+                <p>TICKET DE PEDIDO</p>
+                <hr>
+                <p><strong>Folio:</strong> <span id="ticketFolio"></span></p>
+                <p><strong>Cliente:</strong> <span id="ticketNombre"></span></p>
+                <p><strong>Teléfono:</strong> <span id="ticketTelefono"></span></p>
+                <p><strong>Fecha de entrega:</strong> <span id="ticketFecha"></span></p>
+                <p><strong>Forma de entrega:</strong> <span id="ticketEntrega"></span></p>
+
+                <h3>Productos</h3>
+                <div id="ticketProductos"></div>
+
+                <p class="ticket-total"><strong>Total: $<span id="ticketTotal"></span> MXN</strong></p>
+                <p><strong>Especificaciones:</strong> <span id="ticketEspecificaciones"></span></p>
+                <p class="ticket-success">¡PEDIDO REGISTRADO CORRECTAMENTE!</p>
+                <div class="ticket-actions">
+                    <button type="button" class="btn-primary" onclick="window.print()">Imprimir ticket</button>
+                    <button type="button" class="btn-outline" id="closeTicketButton">Cerrar</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <section class="footer-brand">
+        <strong>SWEET CAKES</strong>
+        <p>Endulzando tus mejores momentos con calidad artesanal.</p>
+    </section>
+    <nav class="footer-nav" aria-label="Enlaces del pie de página">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Catálogo Completo</a>
+        <a href="contacto.html">Realizar Pedido</a>
+    </nav>
+    <p class="copyright">&copy; 2026 Sweet Cakes Repostería. Proyecto Escolar.</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

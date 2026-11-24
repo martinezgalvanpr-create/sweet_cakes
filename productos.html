@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Completo | Sweet Cakes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="site-header">
+        <a href="index.html" class="brand-logo">
+            <strong>SWEET CAKES</strong>
+            <span>LA EXPERIENCIA DULCE</span>
+        </a>
+        <nav class="main-nav" aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html" class="active">Catálogo</a></li>
+                <li><a href="contacto.html">Pedidos y Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <header class="page-banner">
+            <p class="eyebrow">NUESTRO MENÚ ARTESANAL</p>
+            <h1>CATÁLOGO DE POSTRES Y BEBIDAS</h1>
+            <p>Explora nuestra colección completa de 46 especialidades dulces, frappés y bebidas preparadas al momento.</p>
+        </header>
+
+        <!-- SECCIÓN 1: POSTRES-->
+        <section class="catalog-section" aria-labelledby="titulo-postres">
+            <header class="category-header">
+                <h2 id="titulo-postres">Nuestros Postres (24 especialidades)</h2>
+                <p>Pasteles completos, rebanadas individuales, pays, tartas, repostería francesa y antojos horneados cada mañana.</p>
+            </header>
+
+            <section class="products-grid">
+                <!-- Postre 1 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB4CGRIRV_klHiQrm4wrAQ6bfDPouDVt5L751CVSd3NQ&s=10" alt="Pastel Red Velvet">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Más Vendido</span>
+                        <h3>Pastel Red Velvet</h3>
+                        <p>Bizcocho suave tono vino con betún de queso crema tradicional.</p>
+                        <p class="price">Rebanada: $55.00 MXN<br>Completo: $380.00 MXN</p>
+                        <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+                            <button type="button" class="btn-outline add-to-cart" data-product="Pastel Red Velvet (Rebanada)" data-price="55.00" style="padding: 0.55rem 0.5rem; font-size: 0.85rem;">Rebanada</button>
+                            <button type="button" class="btn-outline add-to-cart" data-product="Pastel Red Velvet (Completo)" data-price="380.00" style="padding: 0.55rem 0.5rem; font-size: 0.85rem;">Completo</button>
+                        </div>
+                    </section>
+                </article>
+
+                <!-- Postre 2 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80" alt="Pastel Trufa de Chocolate">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Clásico</span>
+                        <h3>Trufa Intensa de Chocolate</h3>
+                        <p>Tres capas de pan de chocolate semiamargo con ganache sedoso.</p>
+                        <p class="price">Rebanada: $65.00 MXN<br>Completo: $410.00 MXN</p>
+                        <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+                            <button type="button" class="btn-outline add-to-cart" data-product="Trufa Intensa de Chocolate (Rebanada)" data-price="65.00" style="padding: 0.55rem 0.5rem; font-size: 0.85rem;">Rebanada</button>
+                            <button type="button" class="btn-outline add-to-cart" data-product="Trufa Intensa de Chocolate (Completo)" data-price="410.00" style="padding: 0.55rem 0.5rem; font-size: 0.85rem;">Completo</button>
+                        </div>
+                    </section>
+                </article>
+
+                <!-- Postre 3 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=600&q=80" alt="Cheesecake de Frutos Rojos">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Fresco</span>
+                        <h3>Cheesecake Frutos del Bosque</h3>
+                        <p>Base crocante de galleta con crema de queso y coulis de zarzamora y fresa.</p>
+                        <p class="price">Rebanada: $85.00 MXN<br>Completo: $350.00 MXN</p>
+                        <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+                            <button type="button" class="btn-outline add-to-cart" data-product="Cheesecake Frutos del Bosque (Rebanada)" data-price="85.00" style="padding: 0.55rem 0.5rem; font-size: 0.85rem;">Rebanada</button>
+                            <button type="button" class="btn-outline add-to-cart" data-product="Cheesecake Frutos del Bosque (Completo)" data-price="350.00" style="padding: 0.55rem 0.5rem; font-size: 0.85rem;">Completo</button>
+                        </div>
+                    </section>
+                </article>
+
+                <!-- Postre 4 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK2dDwYIoS6VG609Ek1McQUEFjZkDZGNy63pS2mFAQyA&s=10" alt="Tiramisú Italiano">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Gourmet</span>
+                        <h3>Tiramisú Artesanal</h3>
+                        <p>Soletas bañadas en café espresso con crema mascarpone y cacao en polvo.</p>
+                        <p class="price">Rebanada: $70.00 MXN<br>Completo: $110.00 MXN</p>
+                        <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+                            <button type="button" class="btn-outline add-to-cart" data-product="Tiramisú Artesanal (Rebanada)" data-price="70.00" style="padding: 0.55rem 0.5rem; font-size: 0.85rem;">Rebanada</button>
+                            <button type="button" class="btn-outline add-to-cart" data-product="Tiramisú Artesanal (Completo)" data-price="110.00" style="padding: 0.55rem 0.5rem; font-size: 0.85rem;">Completo</button>
+                        </div>
+                    </section>
+                </article>
+
+                <!-- Postre 5 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1569864358642-9d1684040f43?auto=format&fit=crop&w=600&q=80" alt="Caja de Macarons">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Para Regalar</span>
+                        <h3>Caja de Macarons (6 piezas)</h3>
+                        <p>Surtido de sabores frambuesa, vino tinto, vainilla y chocolate oscuro.</p>
+                        <p class="price">$185.00 MXN</p>
+                        <button type="button" class="btn-outline add-to-cart" data-product="Caja de Macarons (6 piezas)" data-price="185.00">Agregar al pedido</button>
+                    </section>
+                </article>
+
+                <!-- Postre 6 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80" alt="Brownies con Nuez">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Individual</span>
+                        <h3>Brownie Fudge con Nuez</h3>
+                        <p>Textura húmeda por dentro y crujiente por fuera con trozos de nuez pecana.</p>
+                        <p class="price">$65.00 MXN</p>
+                        <button type="button" class="btn-outline add-to-cart" data-product="Brownie Fudge con Nuez" data-price="65.00">Agregar al pedido</button>
+                    </section>
+                </article>
+
+                <!-- Postre 7 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSa0M3KnDMLrYYEUg0SLmCjjlQsHMYnLWhg73G4Pbd_g&s=10" alt="Cupcakes Red Velvet">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Pack x4</span>
+                        <h3>Cupcakes Terciopelo Rojo</h3>
+                        <p>Cuatro cupcakes individuales decorados con betún suave y chispas rojas.</p>
+                        <p class="price">$160.00 MXN</p>
+                        <button type="button" class="btn-outline add-to-cart" data-product="Cupcakes Terciopelo Rojo" data-price="160.00">Agregar al pedido</button>
+                    </section>
+                </article>
+
+                <!-- Postre 8 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=600&q=80" alt="Tarta de Fresa">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Temporada</span>
+                        <h3>Tarta Cremosa de Fresas</h3>
+                        <p>Masa sablé artesanal rellena de crema pastelera de vainilla y fresas frescas.</p>
+                        <p class="price">Rebanada: $52.00 MXN<br>Completa: $290.00 MXN</p>
+                        <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+                            <button type="button" class="btn-outline add-to-cart" data-product="Tarta Cremosa de Fresas (Rebanada)" data-price="52.00" style="padding: 0.55rem 0.5rem; font-size: 0.85rem;">Rebanada</button>
+                            <button type="button" class="btn-outline add-to-cart" data-product="Tarta Cremosa de Fresas (Completa)" data-price="290.00" style="padding: 0.55rem 0.5rem; font-size: 0.85rem;">Completa</button>
+                        </div>
+                    </section>
+                </article>
+
+                <!-- Postre 9 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5BiawnHHvsQ2rH4UsCPXE-S9mJ6adhgm0mEEVd3KmzQ&s=1" alt="Pastel Selva Negra">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Especialidad</span>
+                        <h3>Pastel Selva Negra</h3>
+                        <p>Bizcocho de cacao relleno de crema chantilly y cerezas negras maceradas.</p>
+                        <p class="price">Rebanada: $72.00 MXN<br>Completo: $420.00 MXN</p>
+                        <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+                            <button type="button" class="btn-outline add-to-cart" data-product="Pastel Selva Negra (Rebanada)" data-price="72.00" style="padding: 0.55rem 0.5rem; font-size: 0.85rem;">Rebanada</button>
+                            <button type="button" class="btn-outline add-to-cart" data-product="Pastel Selva Negra (Completo)" data-price="420.00" style="padding: 0.55rem 0.5rem; font-size: 0.85rem;">Completo</button>
+                        </div>
+                    </section>
+                </article>
+
+                <!-- Postre 10 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?auto=format&fit=crop&w=600&q=80" alt="Volcán de Chocolate">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Caliente</span>
+                        <h3>Volcán Fundido de Chocolate</h3>
+                        <p>Bizcocho horneado al momento con centro líquido de chocolate belga.</p>
+                        <p class="price">$95.00 MXN</p>
+                        <button type="button" class="btn-outline add-to-cart" data-product="Volcán Fundido de Chocolate" data-price="95.00">Agregar al pedido</button>
+                    </section>
+                </article>
+
+                <!-- Postre 11 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?auto=format&fit=crop&w=600&q=80" alt="Rol de Canela Glaseado">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Recién Horneado</span>
+                        <h3>Rol de Canela y Queso</h3>
+                        <p>Pan suave enrollado con canela Ceylon, azúcar mascabado y glaseado cremoso.</p>
+                        <p class="price">$70.00 MXN</p>
+                        <button type="button" class="btn-outline add-to-cart" data-product="Rol de Canela y Queso" data-price="70.00">Agregar al pedido</button>
+                    </section>
+                </article>
+
+                <!-- Postre 12 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY4CHz6G587hPvwy03-SmV_d0lDUGXEEbEWJhTQnQVmw&s=10" alt="Pastel Tres Leches con Frambuesa">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Tradicional</span>
+                        <h3>Tres Leches con Frambuesa</h3>
+                        <p>Pan esponjoso bañado en mezcla de tres leches con cubierta de crema y frambuesas.</p>
+                        <p class="price">Rebanada: $62.00 MXN<br>Completo: $360.00 MXN</p>
+                        <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+                            <button type="button" class="btn-outline add-to-cart" data-product="Tres Leches con Frambuesa (Rebanada)" data-price="62.00" style="padding: 0.55rem 0.5rem; font-size: 0.85rem;">Rebanada</button>
+                            <button type="button" class="btn-outline add-to-cart" data-product="Tres Leches con Frambuesa (Completo)" data-price="360.00" style="padding: 0.55rem 0.5rem; font-size: 0.85rem;">Completo</button>
+                        </div>
+                    </section>
+                </article>
+
+                <!-- Postre 13 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=600&q=80" alt="Panna Cotta de Frutos Rojos">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Ligero</span>
+                        <h3>Panna Cotta de Vainilla y Rubí</h3>
+                        <p>Postre italiano sedoso de vainilla natural coronado con jalea de frutos rojos.</p>
+                        <p class="price">$85.00 MXN</p>
+                        <button type="button" class="btn-outline add-to-cart" data-product="Panna Cotta de Vainilla y Rubí" data-price="85.00">Agregar al pedido</button>
+                    </section>
+                </article>
+
+                <!-- Postre 14 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=600&q=80" alt="Donas Glaseadas Gourmet">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Pack x3</span>
+                        <h3>Donas Artesanales Glaseadas</h3>
+                        <p>Trío de donas esponjosas con glaseado de fresa, chocolate oscuro y frutos secos.</p>
+                        <p class="price">$115.00 MXN</p>
+                        <button type="button" class="btn-outline add-to-cart" data-product="Donas Artesanales Glaseadas" data-price="115.00">Agregar al pedido</button>
+                    </section>
+                </article>
+
+                <!-- Postre 15 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk0EcsCsukKR6h0TiGgx9mWrYjjwifwUKT8pJVVm4MfQ&s=10" alt="Crepas de Nutella y Fresa">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Al Momento</span>
+                        <h3>Crepas Dulces de Fresa y Cacao</h3>
+                        <p>Dos crepas finas rellenas de crema de avellanas, fresas laminadas y azúcar glass.</p>
+                        <p class="price">$105.00 MXN</p>
+                        <button type="button" class="btn-outline add-to-cart" data-product="Crepas Dulces de Fresa y Cacao" data-price="105.00">Agregar al pedido</button>
+                    </section>
+                </article>
+
+                <!-- Postre 16 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwdM8OM-1lLqGKH0Fh97DL6BzJKX5Saz5sPy7O55N01g&s=10" alt="Galletas Red Velvet con Chispas">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Estilo NY</span>
+                        <h3>Galletas Gruesas Red Velvet (4 pzas)</h3>
+                        <p>Galletas suaves por dentro con chispas de chocolate blanco y cacao rojo.</p>
+                        <p class="price">$130.00 MXN</p>
+                        <button type="button" class="btn-outline add-to-cart" data-product="Galletas Gruesas Red Velvet (4 pzas)" data-price="130.00">Agregar al pedido</button>
+                    </section>
+                </article>
+
+                <!-- Postre 17 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=600&q=80" alt="Pay de Limón y Merengue">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Cítrico</span>
+                        <h3>Pay de Limón con Merengue</h3>
+                        <p>Crema ácida de limón amarillo sobre base crujiente con merengue flameado.</p>
+                        <p class="price">Rebanada: $48.00 MXN<br>Completo: $275.00 MXN</p>
+                        <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+                            <button type="button" class="btn-outline add-to-cart" data-product="Pay de Limón con Merengue (Rebanada)" data-price="48.00" style="padding: 0.55rem 0.5rem; font-size: 0.85rem;">Rebanada</button>
+                            <button type="button" class="btn-outline add-to-cart" data-product="Pay de Limón con Merengue (Completo)" data-price="275.00" style="padding: 0.55rem 0.5rem; font-size: 0.85rem;">Completo</button>
+                        </div>
+                    </section>
+                </article>
+
+                <!-- Postre 18 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdRCEmPs-tjiE6ptuUMy3HtSB_TZVxqXfhwJ0PkO0tyQ&s=10" alt="Éclairs de Chocolate y Vino">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Francés</span>
+                        <h3>Éclairs Rellenos de Cacao (2 pzas)</h3>
+                        <p>Pasta choux horneada rellena de crema diplomática de chocolate y glaseado rubí.</p>
+                        <p class="price">$95.00 MXN</p>
+                        <button type="button" class="btn-outline add-to-cart" data-product="Éclairs Rellenos de Cacao (2 pzas)" data-price="95.00">Agregar al pedido</button>
+                    </section>
+                </article>
+
+                <!-- Postre 19 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUdYLkN9quOPC9NGpo3TtmzOEhABzVvlnS2EOK5R_YYg&s=10" alt="Flan Napolitano Artesanal">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Casero</span>
+                        <h3>Flan Napolitano al Caramelo</h3>
+                        <p>Textura ultra cremosa de queso y vainilla natural bañado en caramelo ámbar.</p>
+                        <p class="price">Rebanada: $55.00 MXN<br>Completo: $310.00 MXN</p>
+                        <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+                            <button type="button" class="btn-outline add-to-cart" data-product="Flan Napolitano al Caramelo (Rebanada)" data-price="55.00" style="padding: 0.55rem 0.5rem; font-size: 0.85rem;">Rebanada</button>
+                            <button type="button" class="btn-outline add-to-cart" data-product="Flan Napolitano al Caramelo (Completo)" data-price="310.00" style="padding: 0.55rem 0.5rem; font-size: 0.85rem;">Completo</button>
+                        </div>
+                    </section>
+                </article>
+
+                <!-- Postre 20 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbrSLLpVZM5VS5KpxqReXxnlf_vk6IS4H3l-TS-eABmQ&s=10" alt="Milhojas de Frutos Rojos">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Crujiente</span>
+                        <h3>Milhojas de Vainilla y Frambuesa</h3>
+                        <p>Capas de hojaldre caramelizado intercaladas con crema pastelera y frutos frescos.</p>
+                        <p class="price">Rebanada: $65.00 MXN<br>Completo: $315.00 MXN</p>
+                        <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+                            <button type="button" class="btn-outline add-to-cart" data-product="Milhojas de Vainilla y Frambuesa (Rebanada)" data-price="65.00" style="padding: 0.55rem 0.5rem; font-size: 0.85rem;">Rebanada</button>
+                            <button type="button" class="btn-outline add-to-cart" data-product="Milhojas de Vainilla y Frambuesa (Completo)" data-price="315.00" style="padding: 0.55rem 0.5rem; font-size: 0.85rem;">Completo</button>
+                        </div>
+                    </section>
+                </article>
+
+                <!-- Postre 21 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1624371414361-e670edf4898d?auto=format&fit=crop&w=600&q=80" alt="Churros Rellenos">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Calientitos</span>
+                        <h3>Churros Crujientes con Dip (5 pzas)</h3>
+                        <p>Espolvoreados con azúcar y canela, acompañados de salsa de chocolate oscuro.</p>
+                        <p class="price">$85.00 MXN</p>
+                        <button type="button" class="btn-outline add-to-cart" data-product="Churros Crujientes con Dip (5 pzas)" data-price="85.00">Agregar al pedido</button>
+                    </section>
+                </article>
+
+                <!-- Postre 22 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJQpKwESDfVBjYTNUrF3OttkVqhZkc6v-BTbDVwxd-Tw&s=10" alt="Pastel Zanahoria y Nuez">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Especiado</span>
+                        <h3>Pastel de Zanahoria y Nuez</h3>
+                        <p>Bizcocho húmedo con canela, piña, nuez tostada y betún de queso crema.</p>
+                        <p class="price">Rebanada: $64.00 MXN<br>Completo: $370.00 MXN</p>
+                        <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+                            <button type="button" class="btn-outline add-to-cart" data-product="Pastel de Zanahoria y Nuez (Rebanada)" data-price="64.00" style="padding: 0.55rem 0.5rem; font-size: 0.85rem;">Rebanada</button>
+                            <button type="button" class="btn-outline add-to-cart" data-product="Pastel de Zanahoria y Nuez (Completo)" data-price="370.00" style="padding: 0.55rem 0.5rem; font-size: 0.85rem;">Completo</button>
+                        </div>
+                    </section>
+                </article>
+
+                <!-- Postre 23 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQU29boicH6NCsaJgcbCzPVA3XiLn44OTr3881DR7ARA&s=10" alt="Profiteroles Rellenos">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Porción x4</span>
+                        <h3>Profiteroles Bañados en Ganache</h3>
+                        <p>Esferas ligeras rellenas de crema batida de vainilla con cobertura de cacao.</p>
+                        <p class="price">$105.00 MXN</p>
+                        <button type="button" class="btn-outline add-to-cart" data-product="Profiteroles Bañados en Ganache" data-price="105.00">Agregar al pedido</button>
+                    </section>
+                </article>
+
+                <!-- Postre 24 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWPl28lQQrXPKsxCSHmI7CbKB874g8eyJbw_L2gaEhIg&s=10" alt="Mousse de Chocolate y Cereza">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Copa Gourmet</span>
+                        <h3>Mousse Doble Chocolate y Cereza</h3>
+                        <p>Espuma aireada de chocolate amargo con reducción artesanal de cerezas negras.</p>
+                        <p class="price">$98.00 MXN</p>
+                        <button type="button" class="btn-outline add-to-cart" data-product="Mousse Doble Chocolate y Cereza" data-price="98.00">Agregar al pedido</button>
+                    </section>
+                </article>
+            </section>
+        </section>
+
+        <!-- SECCIÓN 2: FRAPPÉS -->
+        <section class="catalog-section drinks-bg" aria-labelledby="titulo-frappes">
+            <header class="category-header">
+                <h2 id="titulo-frappes">Variedad de Frappés (7 sabores)</h2>
+                <p>Cremosos, granizados al punto perfecto y coronados con crema batida artesanal.</p>
+            </header>
+
+            <section class="products-grid">
+                <!-- Frappé 1 TARO-->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzuajMi0HpYB5rRz57dFJOmPCQqzws4D28qSHOHe_ACA&s=10" alt="Frappé de Taro Cremoso">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Favorito</span>
+                        <h3>Frappé de Taro</h3>
+                        <p>Dulce y aterciopelado frappé de raíz de taro con notas de vainilla, leche cremosa y crema batida.</p>
+                        <p class="price">$88.00 MXN</p>
+                        <button type="button" class="btn-outline add-to-cart" data-product="Frappé de Taro" data-price="88.00">Agregar al pedido</button>
+                    </section>
+                </article>
+
+                <!-- Frappé 2: MOKA -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=600&q=80" alt="Frappé Moka y Crema">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Clásico</span>
+                        <h3>Frappé Moka & Crema</h3>
+                        <p>Bebida granizada de espresso con chocolate oscuro, coronada con crema batida y cacao.</p>
+                        <p class="price">$85.00 MXN</p>
+                        <button type="button" class="btn-outline add-to-cart" data-product="Frappé Moka & Crema" data-price="85.00">Agregar al pedido</button>
+                    </section>
+                </article>
+
+                <!-- Frappé 3: RED VELVET -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuEZgdNZrhB_Uhk3wEygRN7TeqHvAIDkfhQ7z3TIikmDLEAjptWeQ24pmK&s=10" alt="Frappé Red Velvet">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">De la Casa</span>
+                        <h3>Frappé Red Velvet</h3>
+                        <p>Inspirado en nuestro pastel estrella, con cacao rojo, queso crema dulce y trozos de bizcocho.</p>
+                        <p class="price">$92.00 MXN</p>
+                        <button type="button" class="btn-outline add-to-cart" data-product="Frappé Red Velvet" data-price="92.00">Agregar al pedido</button>
+                    </section>
+                </article>
+
+                <!-- Frappé 4: OREO -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5V_Y40CFcp7iqcckmCk9wScf3vBkT1zgTvQr9stFdkX-ObRkQ5DAoCjK6&s=10" alt="Frappé Cookies and Cream">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Crujiente</span>
+                        <h3>Frappé Cookies & Cream</h3>
+                        <p>Base de vainilla helada licuada con galletas de chocolate tipo Oreo y jarabe de cacao.</p>
+                        <p class="price">$88.00 MXN</p>
+                        <button type="button" class="btn-outline add-to-cart" data-product="Frappé Cookies & Cream" data-price="88.00">Agregar al pedido</button>
+                    </section>
+                </article>
+
+                <!-- Frappé 5: CARAMELO -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoh6aTB9DluKFZUfu9Kzk6q4043BH-tYDb5n5a4kX4XQ&s=10" alt="Frappé Caramelo Salado">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Con Café</span>
+                        <h3>Frappé Caramelo Salado</h3>
+                        <p>Café espresso frío mezclado con salsa artesanal de caramelo tostado y crema chantilly.</p>
+                        <p class="price">$86.00 MXN</p>
+                        <button type="button" class="btn-outline add-to-cart" data-product="Frappé Caramelo Salado" data-price="86.00">Agregar al pedido</button>
+                    </section>
+                </article>
+
+                <!-- Frappé 6: FRESAS CON CREMA -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKmQTiN3KFp6bps1vthY-dHmX9nDoOuv0YCf2f3BEkAQ&s=10" alt="Frappé Fresas con Crema">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Sin Café</span>
+                        <h3>Frappé Fresas con Crema</h3>
+                        <p>Fresas naturales trituradas con leche condensada, hielo frappé y crema batida.</p>
+                        <p class="price">$85.00 MXN</p>
+                        <button type="button" class="btn-outline add-to-cart" data-product="Frappé Fresas con Crema" data-price="85.00">Agregar al pedido</button>
+                    </section>
+                </article>
+
+                <!-- Frappé 7: MAZAPÁN -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvC2Zlx0WybMzZs14Ozk5ngvnM5jjxFdMWS0V-5oKbOQ&s=10" alt="Frappé de Mazapán">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Mexicano</span>
+                        <h3>Frappé de Mazapán Artesanal</h3>
+                        <p>Cremosa mezcla de cacahuate tostado estilo mazapán con vainilla y trocitos espolvoreados.</p>
+                        <p class="price">$89.00 MXN</p>
+                        <button type="button" class="btn-outline add-to-cart" data-product="Frappé de Mazapán Artesanal" data-price="89.00">Agregar al pedido</button>
+                    </section>
+                </article>
+            </section>
+        </section>
+
+        <!-- SECCIÓN 3: CAFETERÍA, INFUSIONES Y BEBIDAS FRÍAS  -->
+        <section class="catalog-section" aria-labelledby="titulo-bebidas">
+            <header class="category-header">
+                <h2 id="titulo-bebidas">Cafetería, Malteadas e Infusiones (15 Opciones)</h2>
+                <p>Bebidas calientes de especialidad, malteadas cremosas y refrescos frutales.</p>
+            </header>
+
+            <section class="products-grid">
+                <!-- Bebida 1 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=600&q=80" alt="Capuchino Artesanal">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Caliente</span>
+                        <h3>Capuchino Clásico</h3>
+                        <p>Espresso doble de grano mexicano con leche vaporizada y espuma cremosa.</p>
+                        <p class="price">$65.00 MXN</p>
+                        <button type="button" class="btn-outline add-to-cart" data-product="Capuchino Clásico" data-price="65.00">Agregar al pedido</button>
+                    </section>
+                </article>
+
+                <!-- Bebida 2 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBP-fUaSEST28NUfrxBe04ccbX-RkexgD6_GiT-J5jyw&s=10" alt="Chocolate Caliente">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Especial</span>
+                        <h3>Chocolate Caliente Oscuro</h3>
+                        <p>Cacao artesanal fundido en leche entera con un toque de canela y malvaviscos.</p>
+                        <p class="price">$75.00 MXN</p>
+                        <button type="button" class="btn-outline add-to-cart" data-product="Chocolate Caliente Oscuro" data-price="75.00">Agregar al pedido</button>
+                    </section>
+                </article>
+
+                <!-- Bebida 3 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=600&q=80" alt="Latte Vainilla Frío">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Frío</span>
+                        <h3>Iced Latte Vainilla & Caramelo</h3>
+                        <p>Café espresso servido sobre hielo con leche fría y jarabe natural de vainilla.</p>
+                        <p class="price">$78.00 MXN</p>
+                        <button type="button" class="btn-outline add-to-cart" data-product="Iced Latte Vainilla & Caramelo" data-price="78.00">Agregar al pedido</button>
+                    </section>
+                </article>
+
+                <!-- Bebida 4 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBxHxcgm6lj-s_M2AyTmvfdAFqE4-8YcjfRH3VuVj5CQ&s=10" alt="Soda Italiana Frutos Rojos">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Refrescante</span>
+                        <h3>Soda Italiana Frutos Rojos</h3>
+                        <p>Agua mineral burbujeante con reducción casera de cereza, fresa y frambuesa.</p>
+                        <p class="price">$68.00 MXN</p>
+                        <button type="button" class="btn-outline add-to-cart" data-product="Soda Italiana Frutos Rojos" data-price="68.00">Agregar al pedido</button>
+                    </section>
+                </article>
+
+                <!-- Bebida 5 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL3fU7oTyKo3Eif9vXASkh4IYQjF-0AkM8A_vPu233KQ&s=10" alt="Té Helado de Hibisco">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Infusión</span>
+                        <h3>Infusión Fría de Jamaica y Rosa</h3>
+                        <p>Té helado color rubí infusionado con flor de jamaica, pétalos y toque cítrico.</p>
+                        <p class="price">$60.00 MXN</p>
+                        <button type="button" class="btn-outline add-to-cart" data-product="Infusión Fría de Jamaica y Rosa" data-price="60.00">Agregar al pedido</button>
+                    </section>
+                </article>
+
+                <!-- Bebida 6 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=600&q=80" alt="Malteada de Fresa Natural">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Malteada</span>
+                        <h3>Malteada Cremosa de Fresa</h3>
+                        <p>Helado artesanal de fresa batido con leche entera y crema chantilly.</p>
+                        <p class="price">$90.00 MXN</p>
+                        <button type="button" class="btn-outline add-to-cart" data-product="Malteada Cremosa de Fresa" data-price="90.00">Agregar al pedido</button>
+                    </section>
+                </article>
+
+                <!-- Bebida 7 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=600&q=80" alt="Matcha Latte Helado">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Antioxidante</span>
+                        <h3>Matcha Latte Cremoso</h3>
+                        <p>Té verde japonés ceremonial batido con leche cremosa, disponible frío o caliente.</p>
+                        <p class="price">$82.00 MXN</p>
+                        <button type="button" class="btn-outline add-to-cart" data-product="Matcha Latte Cremoso" data-price="82.00">Agregar al pedido</button>
+                    </section>
+                </article>
+
+                <!-- Bebida 8 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=600&q=80" alt="Smoothie de Zarzamora y Cereza">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Natural</span>
+                        <h3>Smoothie Vino Tinto (Sin Alcohol)</h3>
+                        <p>Batido espeso de zarzamora, arándano azul, fresa y yogurt griego natural.</p>
+                        <p class="price">$84.00 MXN</p>
+                        <button type="button" class="btn-outline add-to-cart" data-product="Smoothie Vino Tinto (Sin Alcohol)" data-price="84.00">Agregar al pedido</button>
+                    </section>
+                </article>
+
+                <!-- Bebida 9 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs36MS_c6gEOq7xXsfBrWavq4V0uhRedxbXRRNJj1lgw&s=10" alt="Té Chai Especiado">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Aromático</span>
+                        <h3>Chai Latte Especiado</h3>
+                        <p>Infusión de té negro con cardamomo, jengibre, canela y leche espumada.</p>
+                        <p class="price">$74.00 MXN</p>
+                        <button type="button" class="btn-outline add-to-cart" data-product="Chai Latte Especiado" data-price="74.00">Agregar al pedido</button>
+                    </section>
+                </article>
+
+                <!-- Bebida 10 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" alt="Café Americano">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Clásico</span>
+                        <h3>Café Americano Artesanal</h3>
+                        <p>Extracción pura de grano tostado medio con notas achocolatadas y aroma intenso.</p>
+                        <p class="price">$50.00 MXN</p>
+                        <button type="button" class="btn-outline add-to-cart" data-product="Café Americano Artesanal" data-price="50.00">Agregar al pedido</button>
+                    </section>
+                </article>
+
+                <!-- Bebida 11 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6n-DRcE9TMQ-c_YtfbBX2fbI_EQsdWDEr-HCmfmv_ag&s=10" alt="Malteada de Chocolate Oscuro">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Favorito</span>
+                        <h3>Malteada Triple Chocolate</h3>
+                        <p>Helado de chocolate amargo con jarabe de cacao, trozos de brownie y crema.</p>
+                        <p class="price">$95.00 MXN</p>
+                        <button type="button" class="btn-outline add-to-cart" data-product="Malteada Triple Chocolate" data-price="95.00">Agregar al pedido</button>
+                    </section>
+                </article>
+
+                <!-- Bebida 12 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7hDxNgR0vhFPz4o30Aq5_GfWjEqPNKmEzDxjYm9XvDg&s=10" alt="Espresso Doble Intenso">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Intenso</span>
+                        <h3>Espresso Doble de Altura</h3>
+                        <p>Dos cargas concentradas de café de especialidad con crema avellanada perfecta.</p>
+                        <p class="price">$48.00 MXN</p>
+                        <button type="button" class="btn-outline add-to-cart" data-product="Espresso Doble de Altura" data-price="48.00">Agregar al pedido</button>
+                    </section>
+                </article>
+
+                <!-- Bebida 13 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcfYuKKZb-2jTjPgz8PC0dGLT8loPBx3F_1dGAuTlPxQ&s=10" alt="Mocaccino Helado">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Frío</span>
+                        <h3>Mocaccino Helado con Cacao</h3>
+                        <p>Mezcla fría de espresso, chocolate amargo fundido, leche y espuma sedosa.</p>
+                        <p class="price">$80.00 MXN</p>
+                        <button type="button" class="btn-outline add-to-cart" data-product="Mocaccino Helado con Cacao" data-price="80.00">Agregar al pedido</button>
+                    </section>
+                </article>
+
+                <!-- Bebida 14 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRANcDzBxsgIi2dqCFWvzLYMLxQOKAGE7VCj973tvCtIQ&s=10" alt="Limonada Rosa con Frambuesa">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Refrescante</span>
+                        <h3>Limonada Rosa de Frambuesa</h3>
+                        <p>Jugo de limón recién exprimido con puré de frambuesa natural, hielo y menta.</p>
+                        <p class="price">$62.00 MXN</p>
+                        <button type="button" class="btn-outline add-to-cart" data-product="Limonada Rosa de Frambuesa" data-price="62.00">Agregar al pedido</button>
+                    </section>
+                </article>
+
+                <!-- Bebida 15 -->
+                <article class="product-card">
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4j2cywyeV_Fv8iOCOjBS0I5YXL7IjR_B4mWcdzqU-3Q&s=10" alt="Affogato de Vainilla">
+                    </figure>
+                    <section class="product-info">
+                        <span class="badge">Postre Bebible</span>
+                        <h3>Affogato Clásico de Vainilla</h3>
+                        <p>Bola de helado artesanal de vainilla ahogada en un shot caliente de espresso.</p>
+                        <p class="price">$78.00 MXN</p>
+                        <button type="button" class="btn-outline add-to-cart" data-product="Affogato Clásico de Vainilla" data-price="78.00">Agregar al pedido</button>
+                    </section>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <section class="footer-brand">
+            <strong>SWEET CAKES</strong>
+            <p>Endulzando tus mejores momentos con calidad artesanal.</p>
+        </section>
+        <nav class="footer-nav" aria-label="Enlaces del pie de página">
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Catálogo Completo</a>
+            <a href="contacto.html">Realizar Pedido</a>
+        </nav>
+        <p class="copyright">&copy; 2026 Sweet Cakes Repostería. Proyecto Escolar.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
